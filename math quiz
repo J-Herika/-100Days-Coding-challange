@@ -1,0 +1,42 @@
+string q1 = "(5+2+25) / 4";
+string q2 = "(21-5 + 4) * 7";
+string q3 = "4 + 4 * 4 - 4";
+
+Console.WriteLine("Here are some math questions lets see if you will get them right. \nare you readey?");
+Console.ReadLine();
+
+Console.WriteLine($"Question 1: {q1}");
+int Result01 = Convert.ToInt32(Console.ReadLine());
+if (Result01 == 8)
+{
+    Console.WriteLine("Correct.");
+}
+else
+{
+    Console.WriteLine("Wrong.");
+}
+
+Console.WriteLine($"Question 2: {q2}");
+int Result02 = Convert.ToInt32(Console.ReadLine());
+if (Result02 == 140)
+{
+    Console.WriteLine("Correct.");
+}
+else
+{
+    Console.WriteLine("Wrong.");
+}
+
+
+Console.WriteLine($"Question 3: {q3}");
+int Result03 = Convert.ToInt32(Console.ReadLine());
+if (Result03 == 16)
+{
+    Console.WriteLine("Correct.");
+}
+else
+{
+    Console.WriteLine("Wrong.");
+}
+
+Console.ReadKey();
