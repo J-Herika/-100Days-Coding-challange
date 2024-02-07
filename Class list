@@ -1,0 +1,25 @@
+Console.Write("How many student are in your class: ");
+int numOfStudents = Convert.ToInt32(Console.ReadLine());
+
+string[] students =  new string[numOfStudents];
+Console.WriteLine("Please Input the names of students: ");
+
+for ( int i=0; i < students.Length; i++)
+{
+    students[i] = Console.ReadLine();
+}
+
+Array.Sort(students);
+Console.WriteLine("-----------------");
+
+Console.WriteLine("Here is a list of all the student in class sorted: ");
+
+for (int i = 0; i <students.Length; i++)
+{
+    Console.WriteLine(students[i]);    
+}
+
+//  for the window to stay opened.
+Console.ForegroundColor = ConsoleColor.Red;
+Console.Write("\n\nPress any key to Close the Window.");
+Console.ReadKey();
