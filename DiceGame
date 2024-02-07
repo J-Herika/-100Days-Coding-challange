@@ -1,0 +1,24 @@
+Random numberGen = new Random();
+int roll01 = 0;
+int roll02 = 1;
+int attempts = 0;
+
+Console.WriteLine("Press ENTER to roll the dice's...");
+while(roll01 != roll02)
+{
+    Console.ReadKey();
+
+    roll01 = numberGen.Next(1, 7);
+    roll02 = numberGen.Next(1, 7);
+
+    Console.WriteLine($"\nDice 01: {roll01} \nDice 02: {roll02}");
+
+    attempts++;
+}
+
+Console.WriteLine($"iT took you {attempts} to roll two of a kind.");
+
+//  for the window to stay opened.
+Console.ForegroundColor = ConsoleColor.Red;
+Console.Write("\n\nPress any key to Close the Window.");
+Console.ReadKey();
